@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="@string/your_score"
+        android:layout_gravity="center"
+        android:textSize="@dimen/question_size"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/big_size"
+        android:id="@+id/scoreTV"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/yellow_rounded_button"
+            android:onClick="shareResult"
+            android:text="@string/share_result"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/pink_rounded_button"
+            android:text="@string/dia"
+            android:id="@+id/doItAgainBtn"
+            android:onClick="doItAgain"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

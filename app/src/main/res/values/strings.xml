@@ -1,0 +1,12 @@
+<resources xmlns:xliff="http://schemas.android.com/tools">
+
+    <string name="app_name">QuizApp</string>
+    <string name="finish">Finish</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="your_score">You\'ve got</string>
+    <string name="dia">Do it again !</string>
+    <string name="share_result">Share Result</string>
+    <string name="share_message">Whoa ! I got %%<xliff:g id="score" example="100">%d</xliff:g> on Khaled\'s QuizApp !</string>
+
+</resources>

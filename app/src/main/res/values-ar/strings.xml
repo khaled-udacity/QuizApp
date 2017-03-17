@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="http://schemas.android.com/tools">
+    <string name="app_name">QuizApp</string>
+    <string name="dia" translatable="false">حاول مرة أخرى !</string>
+    <string name="finish" translatable="false">انتهى</string>
+    <string name="next" translatable="false">التالي</string>
+    <string name="previous" translatable="false">السابق</string>
+    <string name="share_result" translatable="false">شارك نتيجتك</string>
+    <string name="your_score" translatable="false">حصلت على:</string>
+    <string name="share_message">%% في QuizApp <xliff:g id="score" example="100.0">%f</xliff:g> وااااو حصلت على </string>
+
+</resources>

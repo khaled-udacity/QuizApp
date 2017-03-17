@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+
+            <khaledharthi.com.quizapp.MyViewPager
+                android:layout_width="match_parent"
+                android:id="@+id/viewPager"
+                android:layout_height="wrap_content"/>
+
+            <include
+                android:id="@+id/result_layout"
+                android:visibility="gone"
+                layout="@layout/result_layout"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:layout_marginRight="10dp"
+                    android:onClick="showPrev"
+                    android:id="@+id/prevBtn"
+                    android:background="@drawable/pink_rounded_button"
+                    android:enabled="false"
+                    android:text="@string/previous"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="true"
+                    android:background="@drawable/pink_rounded_button"
+                    android:id="@+id/nextBtn"
+                    android:onClick="showNext"
+                    android:text="@string/next"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
